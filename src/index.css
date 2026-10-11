@@ -1,0 +1,151 @@
+:root {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: var(--page);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+  --page: #f7f8fb;
+  --surface: #ffffff;
+  --surface-soft: #f7f8fc;
+  --text: #212b40;
+  --muted: #647086;
+  --line: #e5e8f0;
+  --primary: #5b58d6;
+  --primary-hover: #4946bd;
+  --primary-soft: #efedff;
+  --primary-text: #5146c5;
+  --amber-soft: #fff5e4;
+  --amber-text: #966015;
+  --blue-soft: #eaf2ff;
+  --blue-text: #316cb8;
+  --green-soft: #e9f7f0;
+  --green-text: #267153;
+  --red-soft: #fff0f0;
+  --red-text: #bf3548;
+  --shadow: 0 3px 12px #17233b04;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #121720;
+  --surface: #1b2230;
+  --surface-soft: #222b3b;
+  --text: #e9edf6;
+  --muted: #a4aec1;
+  --line: #30394d;
+  --primary: #a29bff;
+  --primary-hover: #b5afff;
+  --primary-soft: #302d51;
+  --primary-text: #c0baff;
+  --amber-soft: #3b3023;
+  --amber-text: #eac080;
+  --blue-soft: #23334d;
+  --blue-text: #9ec5ff;
+  --green-soft: #203a32;
+  --green-text: #8cdbb6;
+  --red-soft: #422937;
+  --red-text: #ffabba;
+  --shadow: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+  outline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--primary);
+}
+
+button {
+  color: inherit;
+}
+
+input,
+textarea,
+select {
+  min-width: 0;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  transition:
+    border-color 150ms,
+    background-color 150ms,
+    color 150ms;
+}
+
+svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
